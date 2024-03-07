@@ -1,0 +1,19 @@
+{
+    "name": "Hex decode",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background":{
+        "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "caox.png",
+      "32": "caox.png",
+      "48": "caox.png",
+      "128": "caox.png"
+    },
+    "content_scripts":[{
+      "matches": ["<all_urls>"],
+      "js":  ["content.js"]
+    }],
+    "permissions": ["contextMenus","activeTab"]
+}
